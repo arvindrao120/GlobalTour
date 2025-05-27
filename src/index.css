@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+* {
+  font-family: "Playfair", serif;
+  font-weight: 500;
+}
+
+/* 
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #614385 0%,
+    #516395 51%,
+    #614385 100%
+  );
+} */
+/* .btn-grad {
+  background-color: #fba31a;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #eee;
+  background-position: right center; /* change the direction of the change here */
+  /* color: #fff; */
+  /* text-decoration: none; */
+/* } */ 
+
+.nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(45px);
+}
+/* .hero-shape.shape-2 {
+  width: 300px;
+  height: 300px;
+  top: 60%;
+  right: 15%;
+  animation-delay: 2s;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 188, 212, 0.2);
+  border-image: initial;
+}
+.hero-shapes {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+} */
+
+
+
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px; /* same as border-b-4 */
+  width: 100%;
+  background-color: #CB8723;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.animated-underline:hover::before {
+  transform: scaleX(1);
+}
