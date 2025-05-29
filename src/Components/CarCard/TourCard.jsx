@@ -7,7 +7,7 @@ const TourCard = ({ item }) => {
 
   return (
     <>
-      <div className="w-[420px] h-[600px] bg-white rounded-3xl shadow-2xl overflow-hidden transition duration-300 hover:shadow-2xl flex flex-col">
+      <div className="lg:w-[420px] md:w-[350px] min-w-[320px]  h-[600px] bg-white rounded-3xl shadow-2xl overflow-hidden transition duration-300 hover:shadow-2xl flex flex-col">
         {/* Image with price tag */}
         <div className="relative">
           <img
