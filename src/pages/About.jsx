@@ -14,7 +14,11 @@ function About() {
           <h2 className="py-4 text-2xl md:text-5xl text-white text-center">
             Meet Global India Travels
           </h2>
+<<<<<<< HEAD
           <h3 className="py-3 text-center">
+=======
+          <h3 className="pb-10 text-center">
+>>>>>>> 49ed276801a7dd298d54abc3f8ad6fdd23a1c106
             Explore India with Confidence: Premium Tours & Reliable Car Rentals
           </h3>
 
