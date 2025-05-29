@@ -25,7 +25,7 @@ function ShowTour() {
           <div className="flex justify-center w-full">
             <div
               className="grid grid-cols-1 gap-10
-             max-w-4/5 w-full  place-items-center xl:grid-cols-3 lg:grid-cols-3   py-10  "
+             max-w-4/5 w-full px-4  place-items-center xl:grid-cols-3 lg:grid-cols-3   py-10  "
             >
               {tourData.map((item, idx) => (
                 <TourCard item={item} key={idx} />
