@@ -1,38 +1,66 @@
 import React from "react";
 import { assets } from "../../assets/assets";
-import ContactBtn from "../Button/ContactBtn";
+import { motion } from "framer-motion";
+// import ContactBtn from "../Button/ContactBtn";
 
 function Navbar() {
   const navItems = (
     <>
-      <li className="animated-underline">
+      <motion.li
+        className="animated-underline"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <a href="#Header">Home</a>
-      </li>
-      <li className="animated-underline">
-        <a href={"#About"}>About Us</a>
-      </li>
-      <li className="animated-underline">
+      </motion.li>
+      <motion.li
+        className="animated-underline"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <a href="#About">About Us</a>
+      </motion.li>
+      <motion.li
+        className="animated-underline"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <a href="#Projects">Services</a>
-      </li>
-      <li className="animated-underline">
+      </motion.li>
+      <motion.li
+        className="animated-underline"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <a href="#Testimonials">Car Booking</a>
-      </li>
-      <li className="animated-underline">
+      </motion.li>
+      <motion.li
+        className="animated-underline"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <a href="#Gallery">Gallery</a>
-      </li>
-      <li className="animated-underline">
+      </motion.li>
+      <motion.li
+        className="animated-underline"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <a href="#Contact">Contact Us</a>
-      </li>
+      </motion.li>
     </>
   );
 
   return (
     <>
-      <div
+      <motion.div
         className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md"
         style={{
           boxShadow: "0 4px 12px 0 #1D1C39",
         }}
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="navbar lg:text-white lg:px-10 px-4">
           {/* Navbar Start */}
@@ -60,12 +88,24 @@ function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 text-2xl shadow"
+                className="menu menu-sm dropdown-content z-[1] mt-3 w-52 p-2 text-2xl shadow-lg rounded-box"
+                style={{
+                  backgroundColor: "rgba(29, 28, 57, 0.95)", // dark translucent background
+                  color: "white", // force white text
+                }}
               >
                 {navItems}
               </ul>
             </div>
-            <img className="w-36" src={assets.logo} alt="Logo" />
+
+            <motion.img
+              className="w-36"
+              src={assets.logo}
+              alt="Logo"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            />
           </div>
 
           {/* Navbar Center */}
@@ -74,10 +114,11 @@ function Navbar() {
               {navItems}
             </ul>
           </div>
-        
-      {/* <ContactBtn/> */}
-      </div>
-      </div>
+
+          {/* Optional contact button */}
+          {/* <ContactBtn /> */}
+        </div>
+      </motion.div>
 
       {/* Spacer to prevent layout shift due to fixed navbar */}
       <div className="h-[80px]"></div>

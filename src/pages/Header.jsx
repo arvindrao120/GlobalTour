@@ -10,7 +10,7 @@ function Header() {
       <div className="relative min-h-screen w-full overflow-hidden" id="Header">
         {/* Background Layers */}
         <div
-          className="absolute inset-0 bg-cover bg-center -z-20"
+          className="absolute inset-0 bg-cover bg-center -z-20"   add an image on right side empty space in this hero section  
           style={{ backgroundImage: "url('hero.jpg')" }}
         />
         <div className="absolute inset-0 bg-[#0a0f3c] mix-blend-multiply opacity-80 -z-10" />
@@ -43,8 +43,8 @@ function Header() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
             >
-              Experience extraordinary journeys with our premium travel
-              services and luxury car rentals. Your dream vacation starts here.
+              Experience extraordinary journeys with our premium travel services
+              and luxury car rentals. Your dream vacation starts here.
             </motion.p>
 
             <motion.p
@@ -63,9 +63,9 @@ function Header() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.1 }}
             >
-              <Hero1Btn/>
+              <Hero1Btn />
 
-             <Hero2Btn/>
+              <Hero2Btn />
             </motion.div>
           </motion.div>
         </div>
