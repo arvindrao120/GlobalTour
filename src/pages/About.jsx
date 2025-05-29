@@ -5,7 +5,7 @@ import ContactBtn from "../Components/Button/ContactBtn";
 function About() {
   return (
     <>
-      <div className="relative w-full pt-32 bg-slate-950">
+      <div className="relative w-full  bg-slate-950">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
 
         {/* Meet  global india travel */}
@@ -14,11 +14,7 @@ function About() {
           <h2 className="py-4 text-2xl md:text-5xl text-white text-center">
             Meet Global India Travels
           </h2>
-<<<<<<< HEAD
           <h3 className="py-3 text-center">
-=======
-          <h3 className="pb-10 text-center">
->>>>>>> 49ed276801a7dd298d54abc3f8ad6fdd23a1c106
             Explore India with Confidence: Premium Tours & Reliable Car Rentals
           </h3>
 

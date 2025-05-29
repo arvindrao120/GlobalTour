@@ -7,10 +7,10 @@ function Meet() {
   return (
     <>
       <div>
-        <div className="w-full py-7 px-7 md:py-10 lg:py-20  bg-white text-black">
+        <div className="w-full py-7 px-7 md:py-10 lg:py-12  bg-white text-black">
           <div>
-            <div className="w-full container text-center m-auto">
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-[#4245AD]  md:pt-10 lg:pt-20 lg:py-6">
+            <div className=" container text-center m-auto">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-[#4245AD]    ">
                 Our Journey & Mission
               </h1>
               <p className="text-gray-500  text-center mb-8">
