@@ -62,7 +62,7 @@ function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="navbar lg:text-white lg:px-10 px-4">
+        <div className="navbar lg:text-black lg:px-10 px-4">
           {/* Navbar Start */}
           <div className="navbar-start">
             <div className="dropdown">

@@ -3,11 +3,11 @@ import { FaMapMarkerAlt, FaUserFriends, FaClock, FaStar } from "react-icons/fa";
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
 
 const TourCard = ({ item }) => {
-  console.log(item);
+
 
   return (
     <>
-      <div className="lg:w-[420px] md:w-[350px] min-w-[320px]  h-[600px] bg-white rounded-3xl shadow-2xl overflow-hidden transition duration-300 hover:shadow-2xl flex flex-col">
+      <div className="lg:w-[420px] md:w-[350px] min-w-[320px]  h-[600px] bg-white rounded-3xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl flex flex-col">
         {/* Image with price tag */}
         <div className="relative">
           <img
@@ -51,7 +51,7 @@ const TourCard = ({ item }) => {
 
           {/* Button at the bottom */}
           <div className="mt-4">
-            <PopularDestinationBtn />
+            <PopularDestinationBtn text={"Explore Now"}/>
           </div>
         </div>
       </div>

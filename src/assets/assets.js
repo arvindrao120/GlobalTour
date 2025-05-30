@@ -1,16 +1,20 @@
 import logo from "./logo.png";
 import hero_photo from "./hero_photo.jpg";
 import about_photo from "./about_photo.jpg";
-import swift_dezire from "./swift-dezire.png";
+import swift_dezire from "./swift-dezire.avif";
 import tajMahal from "./taj_mahal.avif";
 import redFort from "./red_fort.avif";
 import qutubMinar from "./qutub_minar.avif";
+import crysta from "./crysta-innova.avif";
+import xuv from "./xuv.avif";
 
 export const assets = {
   logo,
   hero_photo,
   about_photo,
   swift_dezire,
+  crysta,
+  xuv
 };
 
 // tour data
@@ -302,7 +306,7 @@ export const carsData = [
     transmission: "Automatic",
     airbags: 6,
     pricePerKm: 3500,
-    image: "car1.jpg",
+    image: crysta,
     category: "SUV",
     available: true,
   },
@@ -314,7 +318,7 @@ export const carsData = [
     transmission: "Manual",
     airbags: 2,
     pricePerKm: 1800,
-    image: "car2.jpg",
+    image: swift_dezire,
     category: "Sedan",
     available: true,
   },
@@ -326,7 +330,7 @@ export const carsData = [
     transmission: "Automatic",
     airbags: 6,
     pricePerKm: 4000,
-    image: "car3.jpg",
+    image: xuv,
     category: "SUV",
     available: true,
   },
@@ -535,4 +539,3 @@ export const carsData = [
     available: true,
   },
 ];
-
