@@ -3,7 +3,7 @@ import { FaUserFriends, FaSuitcase, FaGasPump, FaCog } from "react-icons/fa";
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
 
 const CarCard = ({item}) => {
-  console.log(item);
+
   
   return (
     <div className="w-[320px] bg-white rounded-3xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl p-4">

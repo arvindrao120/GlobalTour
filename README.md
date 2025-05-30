@@ -52,7 +52,11 @@ Tour_Travel/
 
 1. Clone the repository:
 ```bash
+<<<<<<< HEAD
 git clone <repository-url>
+=======
+git clone https://github.com/arvindrao120/GlobalTour.git
+>>>>>>> cb4615391697ccfb0e2426b1e614d7a11e1337a9
 ```
 
 2. Install dependencies:
@@ -114,4 +118,8 @@ npm start
 MIT License
 
 ## 👥 Contributors
+<<<<<<< HEAD
 - Add your name and contact information here
+=======
+- Arvind Yadav
+>>>>>>> cb4615391697ccfb0e2426b1e614d7a11e1337a9

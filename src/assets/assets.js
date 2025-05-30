@@ -8,6 +8,8 @@ import qutubMinar from "./qutub_minar.avif";
 import crysta from "./crysta-innova.avif";
 import xuv from "./xuv.avif";
 
+
+
 export const assets = {
   logo,
   hero_photo,
@@ -539,3 +541,7 @@ export const carsData = [
     available: true,
   },
 ];
+
+// car data
+
+

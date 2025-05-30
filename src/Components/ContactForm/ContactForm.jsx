@@ -1,20 +1,37 @@
 // ContactForm.jsx
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
 
 function ContactForm() {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
+  const [result, setResult] = React.useState("Send Message");
 
-  const onSubmit = (data) => {
-    alert(JSON.stringify(data, null, 2));
-    reset();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    console.log(formData);
+    
+
+    formData.append("access_key", "575638ac-485e-427c-98eb-b8fefeffe180");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    console.log(data);
+    
+
+    if (data.success) {
+      setResult("Send Message");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
 
   return (
@@ -52,13 +69,13 @@ function ContactForm() {
             />
           </div>
           <div className="w-full pt-4 text-left ">
-            <p className="text-lg"> Subject</p>
+            <p className="text-lg"> Mobile</p>
             <input
               className="w-full  outline-none bg-[#EFEAF7]  shadow-xl focus:bg-[#E9E1FF] rounded-xl py-3 px-4 mt-2"
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              id="subject"
+              type="number"
+              name="mobile"
+              placeholder="Mobile"
+              id="Mobile"
               required
             />
           </div>
@@ -74,7 +91,7 @@ function ContactForm() {
           ></textarea>
         </div>
 
-        <PopularDestinationBtn text={"Send Message"} />
+        <PopularDestinationBtn text={result ? result : "Send Messeage"} />
       </form>
     </motion.div>
   );
