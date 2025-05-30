@@ -114,4 +114,4 @@ npm start
 MIT License
 
 ## 👥 Contributors
-- Add your name and contact information here
+- Arvind Yadav
