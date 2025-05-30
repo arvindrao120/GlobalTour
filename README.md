@@ -1,12 +1,117 @@
-# React + Vite
+# Tour & Travel Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based travel and car rental website showcasing Indian tourist destinations and premium car rental services.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tour Section
+- 25 popular Indian destinations
+- Detailed information for each destination including:
+  - Price
+  - Duration (days)
+  - Location
+  - Rating
+  - Group size capacity
+- Image gallery of destinations
+- Filtering and sorting options
 
-## Expanding the ESLint configuration
+### Car Rental Section
+- 20 premium vehicles
+- Detailed specifications including:
+  - Seating capacity
+  - Fuel type
+  - Transmission type
+  - Safety features (airbags)
+  - Price per kilometer
+  - Vehicle category
+- Availability status
+- Multiple vehicle categories (SUV, Sedan, MPV, Hatchback)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
+
+## 📁 Project Structure
+```
+Tour_Travel/
+├── src/
+│   ├── assets/
+│   │   ├── assets.js         # Data and asset exports
+│   │   ├── images/           # Image resources
+│   ├── Components/
+│   │   ├── TourCard/        # Tour listing component
+│   │   ├── CarCards/        # Car listing component
+│   │   └── Button/          # Reusable button components
+│   └── pages/
+│       ├── ShowTour.jsx     # Tours display page
+│       └── Showcars.jsx     # Cars display page
+```
+
+## 💻 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies:
+```bash
+cd Tour_Travel
+npm install
+```
+
+3. Run the development server:
+```bash
+npm start
+```
+
+## 🎯 Key Features
+
+### Tour Destinations
+- Popular Indian monuments and tourist spots
+- Price range: ₹1,599 to ₹4,999
+- Duration: 1-5 days
+- Group sizes: 2-6 people
+- Rating system: 4-5 stars
+
+### Car Fleet
+- Various categories from economy to luxury
+- Price range: ₹15-50 per kilometer
+- Seating capacity: 4-7 persons
+- Multiple fuel options: Petrol, Diesel, CNG, Electric
+- Transmission options: Manual and Automatic
+- Safety features: 2-7 airbags
+
+## 🎨 UI Features
+- Responsive grid layouts
+- Modern design with Tailwind CSS
+- Interactive cards
+- Smooth transitions
+- Mobile-friendly interface
+
+## 🔄 Data Management
+- Centralized data storage in assets.js
+- Modular component structure
+- Efficient data mapping
+- Dynamic content rendering
+
+## 📱 Responsive Design
+- Desktop optimized
+- Tablet friendly
+- Mobile responsive
+- Grid system adaptation
+
+## 🚀 Future Enhancements
+- [ ] Add booking functionality
+- [ ] Implement user authentication
+- [ ] Add payment gateway integration
+- [ ] Include review system
+- [ ] Add search and filter options
+- [ ] Implement real-time availability checking
+
+## 📄 License
+MIT License
+
+## 👥 Contributors
+- Add your name and contact information here
