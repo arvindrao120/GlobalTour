@@ -12,7 +12,7 @@ function Footer() {
     <>
       <div>
         <div className=" py-12 w-full lg:h-[50vh] bg-gradient-to-r from-[#5B37B1] to-[#3D47AB]">
-          <div className=" flex lg:flex-row flex-col justify-center lg:items-center px-20 lg:gap-40 gap-10 w-full lg:h-full">
+          <div className=" flex lg:flex-row flex-col justify-center lg:items-center lg:px-20 px-4 lg:gap-40 gap-10 w-full lg:h-full">
             <div className="lg:max-w-88  space-y-4">
               <img className="w-40 " src={assets.logo} alt="" />
               <p className="text-white text-lg">
@@ -63,7 +63,7 @@ function Footer() {
               <div>
                 <h1 className="text-3xl font-bold">Contact Info</h1>
                 <div>
-                  <div className="flex items-center gap-4 mt-6 max-w-88">
+                  <div className="flex items-center gap-4 mt-6 lg:max-w-88">
                     <IoHome className="text-5xl" />
                     <p className="text-lg">
                       Address: B-1, near Jal Board, Sector B, Vasant Kunj, New
