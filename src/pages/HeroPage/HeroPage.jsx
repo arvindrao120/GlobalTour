@@ -6,6 +6,8 @@ import ShowCars from "../ShowCars";
 import HeroForm from "../HeroForm";
 import Footer from "../../Components/Footer/Footer";
 import WhatsAppBtn from "../../Components/WhatsAppBtn.jsx/WhatsAppBtn";
+import Working from "../Working";
+import Faq from "../Faq";
 function HeroPage() {
   return (
     <>
@@ -14,7 +16,9 @@ function HeroPage() {
         <Meet />
         <ShowTour />
         <ShowCars />
+        <Working/>
         <HeroForm />
+        <Faq/>
         <Footer />
         
           <WhatsAppBtn />

@@ -6,7 +6,7 @@ import SeeMoreBtn from "../Components/Button/SeeMoreBtn";
 function Showcars() {
   return (
     <>
-      <div className="min-h-screen text-black bg-[#EEECFB] w-full">
+      <div className="py-10 text-black bg-[#EEECFB] w-full">
         <div className="lg:max-w-1/2 px-10 container lg:py-20 py-10 mx-auto">
           <p className="text-orange-400 text-xl">Premium Fleet</p>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-[#4245AD] w-full md:py-5 py-3">
