@@ -7,6 +7,7 @@ import redFort from "./red_fort.avif";
 import qutubMinar from "./qutub_minar.avif";
 import crysta from "./crysta-innova.avif";
 import xuv from "./xuv.avif";
+// import car from "./car.png";
 
 
 
@@ -16,7 +17,8 @@ export const assets = {
   about_photo,
   swift_dezire,
   crysta,
-  xuv
+  xuv,
+  // car
 };
 
 // tour data

@@ -11,7 +11,7 @@ function Header() {
         {/* Background Layers */}
         <div
           className="absolute inset-0 bg-cover bg-center -z-20"   add an image on right side empty space in this hero section  
-          style={{ backgroundImage: "url('hero.jpg')" }}
+          style={{ backgroundImage: "url('car.png')" }}
         />
         <div className="absolute inset-0 bg-[#0a0f3c] mix-blend-multiply opacity-80 -z-10" />
         <div className="absolute top-10 left-10 w-24 h-24 bg-purple-800 opacity-30 blur-2xl rounded-full -z-0" />

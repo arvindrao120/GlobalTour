@@ -15,9 +15,7 @@ const TourCard = ({ item }) => {
             alt="Alpine Expedition"
             className="w-full h-80 object-cover transition-transform duration-300 hover:scale-110"
           />
-          <span className="absolute top-3 right-3 bg-orange-400 text-white font-bold px-5 py-2 rounded-full text-md shadow-md">
-            ₹ {item.price}
-          </span>
+         
         </div>
 
         {/* Card Content */}

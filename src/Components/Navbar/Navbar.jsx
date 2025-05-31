@@ -55,7 +55,7 @@ function Navbar() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 w-full z-50 bg-[#3A384D] backdrop-blur-md"
+        className="fixed top-0 left-0 w-full z-50 bg-[#060C17] backdrop-blur-md"
         style={{
           boxShadow: "0 4px 12px 0 #1D1C39",
         }}
