@@ -2,7 +2,7 @@ import React from "react";
 import SeeMoreBtn from "../Components/Button/SeeMoreBtn";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaPhoneFlip } from "react-icons/fa6";
+import { LuPhone } from "react-icons/lu";
 import ContactForm from "../Components/ContactForm/ContactForm";
 import SocialMedia from "../Components/SocialMedia";
 
@@ -72,7 +72,7 @@ function HeroForm() {
                     <div className=" flex items-center bg-white justify-start gap-10 border-gray-300  p-4 rounded-lg shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-110">
                       <div className=" bg-[#EFEAF7] p-4 rounded-md">
                         <a href="tel: +91 7728955910">
-                          <FaPhoneFlip className="text-4xl cursor-pointer text-[#5E35B1]  " />
+                          <LuPhone className="text-4xl cursor-pointer text-[#5E35B1]  " />
                         </a>
                       </div>
                       <div>

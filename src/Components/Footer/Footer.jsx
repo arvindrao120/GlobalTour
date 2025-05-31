@@ -5,7 +5,7 @@ import SocialMedia from "../SocialMedia";
 import { MdArrowForwardIos } from "react-icons/md";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
-import { MdMailOutline } from "react-icons/md";
+import { IoMailSharp } from "react-icons/io5";
 
 function Footer() {
   return (
@@ -81,7 +81,7 @@ function Footer() {
                   </div>
 
                   <div className="flex items-center gap-4 mt-6 max-w-88">
-                    <MdMailOutline className="text-3xl" />
+                    <IoMailSharp className="text-3xl" />
                     <span>
                       <p className="text-lg  hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                         <a href="mailto:globalindiatours27@gmail.com">
