@@ -48,13 +48,16 @@ function Meet() {
                   <span className="text-2xl font-semibold text-yellow-700 ">
                     Manjeet Singh
                   </span>{" "}
-                  , the founder of Global India Tour. With over 25 years in
-                  the travel industry, we've been committed to delivering
+                  , the founder of Global India Tour. With over 25 years in the
+                  travel industry, we've been committed to delivering
                   exceptional travel experiences across India. Our expertise
                   lies in understanding your unique travel needs and providing
                   solutions that ensure comfort, safety, and satisfaction.
                 </p>
-                <ContactBtn />
+                <a href="tel: +91 7728955910">
+                  
+                  <ContactBtn />
+                </a>
               </div>
             </div>
           </div>

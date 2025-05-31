@@ -4,10 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import ContactForm from "../Components/ContactForm/ContactForm";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+import SocialMedia from "../Components/SocialMedia";
 
 function HeroForm() {
   return (
@@ -52,46 +49,43 @@ function HeroForm() {
               </div>
 
               <div>
-                <div className=" rounded-lg lg:max-w-4/5 bg-white my-5">
-                  <div className=" flex items-center bg-white justify-start gap-10 border-gray-300 p-4 rounded-lg shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-110">
-                    <div className=" bg-[#EFEAF7] p-4 rounded-md ">
-                      <MdOutlineMail className="text-4xl cursor-pointer text-[#5E35B1]  " />
-                    </div>
-                    <div>
-                      <h1 className=" text-2xl font-extrabold">Mail</h1>
-                      <p className=" text-gray-500">globalindiatours27@gmail.com</p>
+                <a href="mailto:globalindiatours27@gmail.com">
+                  <div className=" rounded-lg lg:max-w-4/5 bg-white my-5">
+                    <div className=" flex items-center bg-white justify-start gap-10 border-gray-300 p-4 rounded-lg shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-110">
+                      <div className=" bg-[#EFEAF7] p-4 rounded-md ">
+                        <MdOutlineMail className="text-4xl cursor-pointer text-[#5E35B1]  " />
+                      </div>
+                      <div>
+                        <h1 className=" text-2xl font-extrabold">Mail</h1>
+                        <p className=" text-gray-500">
+                          globalindiatours27@gmail.com
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div>
-                <div className=" rounded-lg lg:max-w-4/5 bg-white my-5">
-                  <div className=" flex items-center bg-white justify-start gap-10 border-gray-300  p-4 rounded-lg shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-110">
-                    <div className=" bg-[#EFEAF7] p-4 rounded-md">
-                      <FaPhoneFlip className="text-4xl cursor-pointer text-[#5E35B1]  " />
-                    </div>
-                    <div>
-                      <h1 className=" text-2xl font-extrabold">Phone</h1>
-                    <p className=" text-gray-500">+91-9873545322</p>
+                <a href="tel: +91 7728955910">
+                  <div className=" rounded-lg lg:max-w-4/5 bg-white my-5">
+                    <div className=" flex items-center bg-white justify-start gap-10 border-gray-300  p-4 rounded-lg shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-110">
+                      <div className=" bg-[#EFEAF7] p-4 rounded-md">
+                        <a href="tel: +91 7728955910">
+                          <FaPhoneFlip className="text-4xl cursor-pointer text-[#5E35B1]  " />
+                        </a>
+                      </div>
+                      <div>
+                        <h1 className=" text-2xl font-extrabold">Phone</h1>
+                        <a href="tel: +91 7728955910">7728955910 </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
 
-              <div className=" flex items-center justify-start gap-6 py-10">
-                <div className="text-2xl bg-[#5E35B1] p-4 rounded-full text-white transition-transform duration-300 shadow-lg hover:rotate-[30deg] hover:shadow-2xl">
-                  <FaFacebookF  />
-                </div>
-                <div className="text-xl bg-[#5E35B1] p-4 rounded-full text-white transition-transform duration-300 shadow-lg hover:rotate-[30deg] hover:shadow-2xl">
-                  <FaInstagram />
-                </div>
-                <div className="text-xl bg-[#5E35B1] p-4 rounded-full text-white transition-transform duration-300 shadow-lg hover:rotate-[30deg] hover:shadow-2xl">
-                  <FaTwitter />
-                </div>
-                <div className="text-xl bg-[#5E35B1] p-4 rounded-full text-white transition-transform duration-300 shadow-lg hover:rotate-[30deg] hover:shadow-2xl">
-                  <FaLinkedinIn />
-                </div>
+              <div className=" flex py-6 items-center justify-start ">
+                <SocialMedia />
               </div>
             </div>
             <div className=" lg:hidden w-full h-[2px] bg-[#5E35B1] mb-10"></div>
