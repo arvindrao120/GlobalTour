@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ContactBtn from "../Components/Button/ContactBtn";
+import ContactBtn from "../../Components/Button/ContactBtn";
 
 function About() {
   return (

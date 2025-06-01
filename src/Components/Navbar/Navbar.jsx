@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { assets } from "../../assets/assets";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,56 +13,54 @@ function Navbar() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <a href="#Header">Home</a>
+        <Link to="/">Home</Link>
       </motion.li>
       <motion.li
         className="animated-underline"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <a href="#About">About Us</a>
+        <Link to="/About">About Us</Link>
       </motion.li>
       <motion.li
         className="animated-underline"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <a href="#Projects">Services</a>
+        <Link to="/service">Services</Link>
       </motion.li>
       <motion.li
         className="animated-underline"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <a href="#Testimonials">Car Booking</a>
+        <Link to="/carBooking">Car Booking</Link>
       </motion.li>
       <motion.li
         className="animated-underline"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <a href="#Gallery">Gallery</a>
+        <Link to="/gallery">Gallery</Link>
       </motion.li>
       <motion.li
         className="animated-underline"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <a href="#Contact">Contact Us</a>
+        <Link to="/contact">Contact Us</Link>
       </motion.li>
     </>
   );
 
   return (
     <>
-      <motion.div
+      <div
         className="fixed top-0 left-0 w-full z-50 bg-[#060C17] backdrop-blur-md"
         style={{
           boxShadow: "0 4px 12px 0 #1D1C39",
         }}
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+     
       >
         <nav className="flex items-center justify-between lg:px-10 px-4 py-3">
           {/* Logo */}
@@ -121,7 +120,7 @@ function Navbar() {
             </motion.ul>
           )}
         </AnimatePresence>
-      </motion.div>
+      </div>
       {/* Spacer for fixed navbar */}
       <div className="h-[80px]"></div>
     </>

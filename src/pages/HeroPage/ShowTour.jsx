@@ -1,7 +1,7 @@
 import React from "react";
-import { tourData } from "../assets/assets.js";
-import TourCard from "../Components/TourCard/TourCard.jsx";
-import SeeMoreBtn from "../Components/Button/SeeMoreBtn.jsx";
+import { tourData } from "../../assets/assets.js";
+import TourCard from "../../Components/TourCard/TourCard.jsx";
+import SeeMoreBtn from "../../Components/Button/SeeMoreBtn.jsx";
 
 function ShowTour() {
   return (

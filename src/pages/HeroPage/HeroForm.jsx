@@ -1,10 +1,10 @@
 import React from "react";
-import SeeMoreBtn from "../Components/Button/SeeMoreBtn";
+import SeeMoreBtn from "../../Components/Button/SeeMoreBtn";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
-import ContactForm from "../Components/ContactForm/ContactForm";
-import SocialMedia from "../Components/SocialMedia";
+import ContactForm from "../../Components/ContactForm/ContactForm";
+import SocialMedia from "../../Components/SocialMedia";
 
 function HeroForm() {
   return (

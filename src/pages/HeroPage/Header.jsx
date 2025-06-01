@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../Components/Navbar/Navbar";
+import Navbar from "../../Components/Navbar/Navbar";
 import { motion } from "framer-motion";
-import Hero1Btn from "../Components/Button/Hero1Btn";
-import Hero2Btn from "../Components/Button/Hero2Btn";
+import Hero1Btn from "../../Components/Button/Hero1Btn";
+import Hero2Btn from "../../Components/Button/Hero2Btn";
 
 function Header() {
   return (

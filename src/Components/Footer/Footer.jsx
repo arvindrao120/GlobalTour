@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>
       <div>
-        <div className=" py-12 w-full lg:h-[50vh] bg-gradient-to-r from-[#5B37B1] to-[#3D47AB]">
+        <div className=" w-full lg:h-[36vh] bg-gradient-to-r from-[#5B37B1] to-[#3D47AB]">
           <div className=" flex lg:flex-row flex-col justify-center lg:items-center lg:px-20 px-4 lg:gap-40 gap-10 w-full lg:h-full">
             <div className="lg:max-w-88  space-y-4">
               <img className="w-40 " src={assets.logo} alt="" />

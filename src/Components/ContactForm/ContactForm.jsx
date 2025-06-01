@@ -40,10 +40,11 @@ function ContactForm() {
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="text-center p-6 bg-white rounded-2xl shadow-2xl   lg:px-16 w-full overflow-hidden "
+      className="text-center py-6 bg-white rounded-2xl shadow-2xl   lg:px-16 w-full overflow-hidden "
       id="Contact"
     >
       <form onSubmit={onSubmit} className="max-w-lg mx-auto text-black pt-8">
+        <h1 className="text-3xl text-[#4245AD] text-start pb-4">Book Your Car Now</h1>
         <div className="flex flex-wrap">
           <div className="w-full  text-left">
             <p className="text-lg"> Your Name</p>

@@ -1,7 +1,7 @@
 import React from "react";
-import CarCard from "../Components/CardCards/CarCard";
-import { carsData } from "../assets/assets";
-import SeeMoreBtn from "../Components/Button/SeeMoreBtn";
+import CarCard from "../../Components/CardCards/CarCard";
+import { carsData } from "../../assets/assets";
+import SeeMoreBtn from "../../Components/Button/SeeMoreBtn";
 
 function Showcars() {
   return (

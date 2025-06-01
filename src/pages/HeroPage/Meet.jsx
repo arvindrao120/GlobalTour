@@ -1,9 +1,9 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { assets } from "../../assets/assets";
 import { motion } from "framer-motion";
-import ContactBtn from "../Components/Button/ContactBtn";
+import ContactBtn from "../../Components/Button/ContactBtn";
 
-function Meet() {
+function Meet({heading}) {
   return (
     <>
       <div>
@@ -11,7 +11,7 @@ function Meet() {
           <div>
             <div className=" container text-center m-auto">
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-[#4245AD]    ">
-                Our Journey & Mission
+                {heading}
               </h1>
               <p className="text-gray-500  text-center mb-8">
                 Plan your next journey today - I'm ready to explore!
