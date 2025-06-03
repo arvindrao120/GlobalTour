@@ -2,6 +2,7 @@ import React from "react";
 import CarCard from "../../Components/CardCards/CarCard";
 import { carsData } from "../../assets/assets";
 import SeeMoreBtn from "../../Components/Button/SeeMoreBtn";
+import { Link } from "react-router";
 
 function Showcars() {
   return (
@@ -28,7 +29,9 @@ function Showcars() {
         </div>
 
         <div className="flex  justify-center py-10">
-          <SeeMoreBtn />
+          <Link to={"/gallery"}>
+            <SeeMoreBtn />
+          </Link>
         </div>
       </div>
 

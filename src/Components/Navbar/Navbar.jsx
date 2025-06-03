@@ -1,57 +1,34 @@
 import React, { useState } from "react";
 import { assets } from "../../assets/assets";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = (
-    <>
+const navItems = (
+  <>
+    {[
+      { path: "/", label: "Home" },
+      { path: "/About", label: "About Us" },
+      { path: "/service", label: "Services" },
+      { path: "/carBooking", label: "Car Booking" },
+      { path: "/gallery", label: "Gallery" },
+      { path: "/contact", label: "Contact Us" },
+    ].map(({ path, label }) => (
       <motion.li
+        key={path}
         className="animated-underline"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
+        onClick={() => setMenuOpen(false)} // 👈 Add this line
       >
-        <Link to="/">Home</Link>
+        <NavLink  to={path}>{label}</NavLink>
       </motion.li>
-      <motion.li
-        className="animated-underline"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link to="/About">About Us</Link>
-      </motion.li>
-      <motion.li
-        className="animated-underline"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link to="/service">Services</Link>
-      </motion.li>
-      <motion.li
-        className="animated-underline"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link to="/carBooking">Car Booking</Link>
-      </motion.li>
-      <motion.li
-        className="animated-underline"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link to="/gallery">Gallery</Link>
-      </motion.li>
-      <motion.li
-        className="animated-underline"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link to="/contact">Contact Us</Link>
-      </motion.li>
-    </>
-  );
+    ))}
+  </>
+);
+
 
   return (
     <>
@@ -60,7 +37,6 @@ function Navbar() {
         style={{
           boxShadow: "0 4px 12px 0 #1D1C39",
         }}
-     
       >
         <nav className="flex items-center justify-between lg:px-10 px-4 py-3">
           {/* Logo */}

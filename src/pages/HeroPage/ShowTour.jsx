@@ -2,8 +2,9 @@ import React from "react";
 import { tourData } from "../../assets/assets.js";
 import TourCard from "../../Components/TourCard/TourCard.jsx";
 import SeeMoreBtn from "../../Components/Button/SeeMoreBtn.jsx";
+import { Link } from "react-router";
 
-function ShowTour() {
+function ShowTour({ data }) {
   return (
     <>
       <div className="text-black">
@@ -27,14 +28,18 @@ function ShowTour() {
               className="grid grid-cols-1 gap-10
              max-w-4/5 w-full px-4  place-items-center xl:grid-cols-2  2xl:grid-cols-3 lg:grid-cols-2   py-10  "
             >
-              {tourData.slice(0,3).map((item, idx) => (
-                <TourCard item={item} key={idx} />
-              ))}
-            </div>{" "}
+              {data === "true"
+                ? tourData.map((item, index) => (
+                    <TourCard key={index} item={item} />
+                  ))
+                : tourData
+                    .slice(0, 3)
+                    .map((item, index) => <TourCard key={index} item={item} />)}
+            </div>
           </div>
 
           <div className="flex items-center gap-3 justify-center  py-10 ">
-            <SeeMoreBtn/>
+            <Link to={"/service"}>{data ? "" : <SeeMoreBtn />}</Link>
           </div>
         </div>
       </div>
