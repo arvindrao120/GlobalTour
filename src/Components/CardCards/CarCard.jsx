@@ -1,10 +1,9 @@
 import React from "react";
 import { FaUserFriends, FaSuitcase, FaGasPump, FaCog } from "react-icons/fa";
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
+import { Link } from "react-router";
 
-const CarCard = ({item}) => {
-
-  
+const CarCard = ({ item }) => {
   return (
     <div className="w-[320px] bg-white rounded-3xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl p-4">
       {/* Image and badge */}
@@ -18,7 +17,7 @@ const CarCard = ({item}) => {
           {item.category}
         </span>
         <span className="absolute bottom-[-16px] right-4 bg-orange-400 text-white font-bold text-lg px-4 py-1 rounded-full shadow-md">
-         {item.pricePerKm} /Km
+          {item.pricePerKm} /Km
         </span>
       </div>
 
@@ -46,7 +45,9 @@ const CarCard = ({item}) => {
 
         {/* Reserve Button */}
         <div>
-          <PopularDestinationBtn text={"Reserve Now"} />
+          <Link to={"/contact"}>
+            <PopularDestinationBtn text={"Reserve Now"} />
+          </Link>
         </div>
       </div>
     </div>

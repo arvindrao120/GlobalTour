@@ -7,10 +7,10 @@ import Hero2Btn from "../../Components/Button/Hero2Btn";
 function Header() {
   return (
     <>
-      <div className="relative min-h-screen w-full overflow-hidden" id="Header">
+      <div className="relative min-h-screen w-full text-white overflow-hidden" id="Header">
         {/* Background Layers */}
         <div
-          className="absolute inset-0 bg-cover bg-center -z-20"   add an image on right side empty space in this hero section  
+          className="absolute inset-0 bg-cover bg-center -z-20"   
           style={{ backgroundImage: "url('car.png')" }}
         />
         <div className="absolute inset-0 bg-[#0a0f3c] mix-blend-multiply opacity-80 -z-10" />

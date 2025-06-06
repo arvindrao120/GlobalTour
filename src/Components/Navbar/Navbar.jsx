@@ -6,34 +6,38 @@ import { NavLink } from "react-router";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-const navItems = (
-  <>
-    {[
-      { path: "/", label: "Home" },
-      { path: "/About", label: "About Us" },
-      { path: "/service", label: "Services" },
-      { path: "/carBooking", label: "Car Booking" },
-      { path: "/gallery", label: "Gallery" },
-      { path: "/contact", label: "Contact Us" },
-    ].map(({ path, label }) => (
-      <motion.li
-        key={path}
-        className="animated-underline"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => setMenuOpen(false)} // 👈 Add this line
-      >
-        <NavLink  to={path}>{label}</NavLink>
-      </motion.li>
-    ))}
-  </>
-);
-
+  const navItems = (
+    <>
+      {[
+        { path: "/", label: "Home" },
+        { path: "/About", label: "About Us" },
+        { path: "/service", label: "Services" },
+        { path: "/carBooking", label: "Car Booking" },
+        { path: "/gallery", label: "Gallery" },
+        { path: "/contact", label: "Contact Us" },
+      ].map(({ path, label }) => (
+        <motion.li
+          key={path}
+          className="animated-underline"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setMenuOpen(false)} // 👈 
+        >
+          <NavLink
+            to={path}
+            className={({ isActive }) => isActive ? "text-[#CB8723]" : "text-white"}
+          >
+            {label}
+          </NavLink>
+        </motion.li>
+      ))}
+    </>
+  );
 
   return (
     <>
       <div
-        className="fixed top-0 left-0 w-full z-50 bg-[#060C17] backdrop-blur-md"
+        className="fixed top-0 left-0 w-full text-white z-50 bg-[#060C17] backdrop-blur-md"
         style={{
           boxShadow: "0 4px 12px 0 #1D1C39",
         }}

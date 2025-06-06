@@ -1,13 +1,12 @@
 import React from "react";
 import { FaMapMarkerAlt, FaUserFriends, FaClock, FaStar } from "react-icons/fa";
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
+import { Link } from "react-router";
 
 const TourCard = ({ item }) => {
-
-
   return (
     <>
-      <div className="lg:w-[420px] md:w-[350px] min-w-[320px]  h-[600px] bg-white rounded-3xl shadow-xl overflow-hidden transition duration-300 hover:shadow-2xl flex flex-col">
+      <div className="lg:w-[420px] md:w-[350px] min-w-[320px]  h-[600px] bg-white rounded-3xl shadow-xl overflow-hidden  transition duration-300 hover:shadow-2xl flex flex-col">
         {/* Image with price tag */}
         <div className="relative">
           <img
@@ -15,11 +14,10 @@ const TourCard = ({ item }) => {
             alt="Alpine Expedition"
             className="w-full h-80 object-cover transition-transform duration-300 hover:scale-110"
           />
-         
         </div>
 
         {/* Card Content */}
-        <div className="p-6 flex-1 flex flex-col justify-between">
+        <div className="p-6 flex-1 flex bg-white flex-col justify-center">
           <div>
             <h3 className="text-2xl font-bold text-gray-800">{item.title}</h3>
             <p className="text-gray-500 text-base flex items-center mt-2">
@@ -49,7 +47,9 @@ const TourCard = ({ item }) => {
 
           {/* Button at the bottom */}
           <div className="mt-4">
-            <PopularDestinationBtn text={"Explore Now"}/>
+            <Link to={"/detail"}>
+              <PopularDestinationBtn text={"Explore Now"} />
+            </Link>
           </div>
         </div>
       </div>

@@ -2,40 +2,14 @@
 
 @import "tailwindcss";
 
-@plugin "daisyui";
+
 
 * {
   font-family: "Playfair", serif;
   font-weight: 500;
 }
 
-/* 
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #614385 0%,
-    #516395 51%,
-    #614385 100%
-  );
-} */
-/* .btn-grad {
-  background-color: #fba31a;
-  padding: 0 20px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  color: white;
-  border-radius: 10px;
-  display: block;
-}
 
-.btn-grad:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px #eee;
-  background-position: right center; /* change the direction of the change here */
-  /* color: #fff; */
-  /* text-decoration: none; */
-/* } */ 
 
 .nav {
   position: sticky;

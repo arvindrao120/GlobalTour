@@ -6,12 +6,21 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
+import { useEffect } from "react";
 
 function Footer() {
+  const handleClick = () => {
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  };
   return (
     <>
       <div>
-        <div className=" w-full lg:h-[36vh] bg-gradient-to-r from-[#5B37B1] to-[#3D47AB]">
+        <div className="w-full lg:h-[36vh] p-5 text-white bg-gradient-to-r from-[#5B37B1] to-[#3D47AB]">
           <div className=" flex lg:flex-row flex-col justify-center lg:items-center lg:px-20 px-4 lg:gap-40 gap-10 w-full lg:h-full">
             <div className="lg:max-w-88  space-y-4">
               <img className="w-40 " src={assets.logo} alt="" />
@@ -32,29 +41,35 @@ function Footer() {
                 <h1 className="text-3xl font-bold ">Quik Link</h1>
                 <div className=" space-y-3 text-lg py-6">
                   <div>
-                    <p className="flex items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
+                    <p
+                      onClick={handleClick}
+                      className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110"
+                    >
                       <MdArrowForwardIos />
-                      <Link to={"/"}>Home</Link>
+                      <Link to={""}>Home</Link>
                     </p>
                   </div>
                   <div>
-                    <p className="flex items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
+                    <p className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                       <MdArrowForwardIos />
-                      <Link to={"/privacyPolicy"}>Privacy Policy</Link>
+                      <Link to={"/termsService"}>Privacy & Policy</Link>
                     </p>
                   </div>
 
                   <div>
-                    <p className="flex items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
+                    <p className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                       <MdArrowForwardIos />
                       <Link to={"/termsService"}>Terms And Service</Link>
                     </p>
                   </div>
                   <div>
-                    <p className="flex items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
+                    <Link
+                      to={"/contact"}
+                      className="flex items-center gap-2  cursor-pointer hover:text-[#FF8904] transition-transform duration-300 hover:scale-110"
+                    >
                       <MdArrowForwardIos />
-                      <Link to={"/contact"}>Contact Us</Link>
-                    </p>
+                      Contact Us
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -104,7 +119,6 @@ function Footer() {
           <p className="text-sm">
             © 2024 Global India Tours. All rights reserved.
           </p>
-
         </div>
       </div>
     </>

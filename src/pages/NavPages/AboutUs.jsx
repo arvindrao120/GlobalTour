@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Meet from "../HeroPage/Meet";
 import { motion } from "framer-motion";
 
@@ -25,6 +25,14 @@ const itemVariants = {
 };
 
 function AboutUs() {
+   useEffect(() => {
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+     
+   });
+  
   return (
     <div className="bg-white text-black w-full">
         <motion.div

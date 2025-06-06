@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import Showcars from "../HeroPage/ShowCars";
 
 function CarBooking() {
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      
+    });
   return (
-    <div>CarBooking</div>
-  )
+    <>
+      <Showcars data={true} />
+    </>
+  );
 }
 
-export default CarBooking
+export default CarBooking;

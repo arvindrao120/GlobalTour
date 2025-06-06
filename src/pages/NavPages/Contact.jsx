@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeroForm from '../HeroPage/HeroForm';
 import { motion } from 'framer-motion';
 
@@ -17,6 +17,13 @@ const pageVariants = {
 };
 
 function Contact() {
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      
+    });
   return (
     <>
       <motion.div

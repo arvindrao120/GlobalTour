@@ -3,8 +3,9 @@ import CarCard from "../../Components/CardCards/CarCard";
 import { carsData } from "../../assets/assets";
 import SeeMoreBtn from "../../Components/Button/SeeMoreBtn";
 import { Link } from "react-router";
+import { tr } from "framer-motion/client";
 
-function Showcars() {
+function Showcars({ data }) {
   return (
     <>
       <div className="py-10 text-black bg-[#EEECFB] w-full">
@@ -20,18 +21,24 @@ function Showcars() {
           </p>
         </div>
 
-        <div className="w-full overflow-x-auto">
-          <div className="flex flex-col w-full items-center lg:flex-row justify-center gap-10 px-10">
-            {carsData.slice(0, 3).map((item) => (
-              <CarCard item={item} key={item.id} />
-            ))}
+        <div className="w-2/3 mx-auto">
+          <div className="grid lg:grid-cols-3 space-y-10 md:grid-cols-2 grid-cols-1  place-items-center px-10">
+            {data === true
+              ? carsData.map((item) => <CarCard item={item} key={item.id} />)
+              : carsData
+                  .slice(0, 3)
+                  .map((item) => <CarCard item={item} key={item.id} />)}
           </div>
         </div>
 
         <div className="flex  justify-center py-10">
-          <Link to={"/gallery"}>
-            <SeeMoreBtn />
-          </Link>
+          {data === true ? (
+            ""
+          ) : (
+            <Link to={"/carBooking"}>
+              <SeeMoreBtn />
+            </Link>
+          )}
         </div>
       </div>
 
