@@ -54,7 +54,7 @@ function Meet({heading}) {
                   lies in understanding your unique travel needs and providing
                   solutions that ensure comfort, safety, and satisfaction.
                 </p>
-                <a href="tel: +91 7728955910">
+                <a href="tel: +91 9873545322">
                   
                   <ContactBtn />
                 </a>

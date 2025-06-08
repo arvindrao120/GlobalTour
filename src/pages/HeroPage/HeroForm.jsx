@@ -67,7 +67,7 @@ function HeroForm() {
               </div>
 
               <div>
-                <a href="tel: +91 7728955910">
+                <a href="tel: +91 9873545322">
                   <div className=" rounded-lg lg:max-w-4/5 bg-white my-5">
                     <div className=" flex items-center bg-white justify-start gap-10 border-gray-300  p-4 rounded-lg shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-110">
                       <div className=" bg-[#EFEAF7] p-4 rounded-md">
@@ -75,7 +75,7 @@ function HeroForm() {
                       </div>
                       <div>
                         <h1 className=" text-2xl font-extrabold">Phone</h1>
-                        7728955910 
+                        +91 9873545322
                       </div>
                     </div>
                   </div>

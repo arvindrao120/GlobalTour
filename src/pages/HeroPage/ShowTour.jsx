@@ -7,7 +7,7 @@ import { Link } from "react-router";
 function ShowTour({ data }) {
   return (
     <>
-      <div className="text-black">
+      <div className="text-black " id="ShowTour">
         <div className="relative w-full  bg-white">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
@@ -26,12 +26,10 @@ function ShowTour({ data }) {
           <div className="flex justify-center w-full">
             <div
               className="grid grid-cols-1 gap-10
-             max-w-4/5 w-full px-4  place-items-center xl:grid-cols-2  2xl:grid-cols-3 lg:grid-cols-2   py-10  "
+             max-w-4/5 w-full  place-items-center xl:grid-cols-2  2xl:grid-cols-3 lg:grid-cols-2   py-10  "
             >
               {data === "true"
-                ? tourData.map((item, index) => (
-                    <TourCard key={index} item={item} />
-                  ))
+                ? tourData.map((item) => <TourCard key={item.id} item={item} />)
                 : tourData
                     .slice(0, 3)
                     .map((item, index) => <TourCard key={index} item={item} />)}

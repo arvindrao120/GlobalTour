@@ -2,7 +2,10 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
+// import dotenv from "dotenv"
+// dotenv.config()
 
 function ContactForm() {
   const [result, setResult] = React.useState("Send Message");
@@ -12,7 +15,8 @@ function ContactForm() {
     setResult("Sending....");
     const formData = new FormData(event.target);
     console.log(formData);
-    
+
+    // const accessKey = ;
 
     formData.append("access_key", "575638ac-485e-427c-98eb-b8fefeffe180");
 
@@ -23,7 +27,6 @@ function ContactForm() {
 
     const data = await response.json();
     console.log(data);
-    
 
     if (data.success) {
       setResult("Send Message");
@@ -44,7 +47,9 @@ function ContactForm() {
       id="Contact"
     >
       <form onSubmit={onSubmit} className="max-w-lg mx-auto text-black px-4">
-        <h1 className="text-3xl text-[#4245AD] text-start pb-4">Book Your Car Now</h1>
+        <h1 className="text-3xl text-[#4245AD] text-start pb-4">
+          Book Your Car Now
+        </h1>
         <div className="flex flex-wrap">
           <div className="w-full  text-left">
             <p className="text-lg"> Your Name</p>

@@ -1,16 +1,28 @@
 import logo from "./logo.png";
 import hero_photo from "./hero_photo.jpg";
 import about_photo from "./about_photo.jpg";
-import swift_dezire from "./swift-dezire.avif";
+
+// tour images
 import tajMahal from "./taj_mahal.avif";
 import redFort from "./red_fort.avif";
 import indiaGate from "./india_gate.avif";
 import hawaMahal from "./hawa_mahal.jpg";
-import crysta from "./crysta-innova.avif";
-import xuv from "./xuv.avif";
 import goldenTour from "./golden.jpg";
 import tiger from "./tiger.jpg";
 
+// car images
+import ertiga from "./ertiga.webp";
+import creta from "./creta.avif";
+import fortuner from "./fortuner.avif";
+import crysta from "./crysta-innova.avif";
+import xuv from "./xuv.avif";
+import swift_dezire from "./swift-dezire.avif";
+import urbania from "./urbania.jpg"
+import urbania_delux from "./urbania_delux.avif"
+import largeCoach from './large_coach.jpg'
+import tempo from "./tempo.jpg"
+
+//gallery image
 import pic2 from "./pic2.jpg";
 import pic3 from "./pic3.jpg";
 import pic4 from "./pic4.jpg";
@@ -146,215 +158,6 @@ export const tourData = [
     price: 2599,
     rating: 4,
   },
-  // {
-  //   id: 7,
-  //   people: 2,
-  //   title: "Mysore Palace",
-  //   image: tajMahal,
-  //   alt: "mysore_palace.jpg",
-  //   days: 2,
-  //   place: "Mysore India",
-  //   price: 2799,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 8,
-  //   people: 5,
-  //   title: "Victoria Memorial",
-  //   image: redFort,
-  //   alt: "victoria_memorial.jpg",
-  //   days: 1,
-  //   place: "Kolkata India",
-  //   price: 1999,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 9,
-  //   people: 3,
-  //   title: "Golden Temple",
-  //   image: qutubMinar,
-  //   alt: "golden_temple.jpg",
-  //   days: 2,
-  //   place: "Amritsar India",
-  //   price: 2999,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 10,
-  //   people: 4,
-  //   title: "Lotus Temple",
-  //   image: tajMahal,
-  //   alt: "lotus_temple.jpg",
-  //   days: 1,
-  //   place: "Delhi India",
-  //   price: 1899,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 11,
-  //   people: 2,
-  //   title: "Amber Fort",
-  //   image: redFort,
-  //   alt: "amber_fort.jpg",
-  //   days: 2,
-  //   place: "Jaipur India",
-  //   price: 2499,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 12,
-  //   people: 5,
-  //   title: "Meenakshi Temple",
-  //   image: qutubMinar,
-  //   alt: "meenakshi_temple.jpg",
-  //   days: 3,
-  //   place: "Madurai India",
-  //   price: 3299,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 13,
-  //   people: 3,
-  //   title: "Gateway of India",
-  //   image: tajMahal,
-  //   alt: "gateway_of_india.jpg",
-  //   days: 2,
-  //   place: "Mumbai India",
-  //   price: 2999,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 14,
-  //   people: 4,
-  //   title: "Jantar Mantar",
-  //   image: redFort,
-  //   alt: "jantar_mantar.jpg",
-  //   days: 1,
-  //   place: "Delhi India",
-  //   price: 1599,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 15,
-  //   people: 2,
-  //   title: "Sanchi Stupa",
-  //   image: qutubMinar,
-  //   alt: "sanchi_stupa.jpg",
-  //   days: 2,
-  //   place: "Sanchi India",
-  //   price: 2199,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 16,
-  //   people: 5,
-  //   title: "Ajanta Caves",
-  //   image: tajMahal,
-  //   alt: "ajanta_caves.jpg",
-  //   days: 3,
-  //   place: "Aurangabad India",
-  //   price: 3999,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 17,
-  //   people: 3,
-  //   title: "Ellora Caves",
-  //   image: redFort,
-  //   alt: "ellora_caves.jpg",
-  //   days: 2,
-  //   place: "Aurangabad India",
-  //   price: 2899,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 18,
-  //   people: 4,
-  //   title: "Sun Temple",
-  //   image: qutubMinar,
-  //   alt: "sun_temple.jpg",
-  //   days: 1,
-  //   place: "Konark India",
-  //   price: 2099,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 19,
-  //   people: 2,
-  //   title: "Ranthambore Fort",
-  //   image: tajMahal,
-  //   alt: "ranthambore_fort.jpg",
-  //   days: 2,
-  //   place: "Rajasthan India",
-  //   price: 2599,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 20,
-  //   people: 5,
-  //   title: "Chittorgarh Fort",
-  //   image: redFort,
-  //   alt: "chittorgarh_fort.jpg",
-  //   days: 3,
-  //   place: "Chittorgarh India",
-  //   price: 3499,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 21,
-  //   people: 3,
-  //   title: "Golconda Fort",
-  //   image: qutubMinar,
-  //   alt: "golconda_fort.jpg",
-  //   days: 2,
-  //   place: "Hyderabad India",
-  //   price: 2799,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 22,
-  //   people: 4,
-  //   title: "Brihadeeswara Temple",
-  //   image: tajMahal,
-  //   alt: "brihadeeswara_temple.jpg",
-  //   days: 1,
-  //   place: "Thanjavur India",
-  //   price: 1999,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 23,
-  //   people: 2,
-  //   title: "Sundarbans",
-  //   image: redFort,
-  //   alt: "sundarbans.jpg",
-  //   days: 2,
-  //   place: "West Bengal India",
-  //   price: 2999,
-  //   rating: 5,
-  // },
-  // {
-  //   id: 24,
-  //   people: 5,
-  //   title: "Kaziranga National Park",
-  //   image: qutubMinar,
-  //   alt: "kaziranga_national_park.jpg",
-  //   days: 3,
-  //   place: "Assam India",
-  //   price: 3999,
-  //   rating: 4,
-  // },
-  // {
-  //   id: 25,
-  //   people: 3,
-  //   title: "Backwaters of Kerala",
-  //   image: tajMahal,
-  //   alt: "backwaters_kerala.jpg",
-  //   days: 2,
-  //   place: "Kerala India",
-  //   price: 3499,
-  //   rating: 5,
-  // },
 ];
 
 // car data
@@ -366,7 +169,7 @@ export const carsData = [
     fuelType: "Diesel",
     transmission: "Automatic",
     airbags: 6,
-    pricePerKm: 16,
+    pricePerKm: 18,
     image: crysta,
     category: "SUV",
     available: true,
@@ -378,44 +181,33 @@ export const carsData = [
     fuelType: "Petrol",
     transmission: "Manual",
     airbags: 2,
-    pricePerKm: 11,
+    pricePerKm: 13,
     image: swift_dezire,
     category: "Sedan",
     available: true,
   },
   {
     id: 3,
-    name: "Mahindra XUV700",
+    name: "Mahindra XUV 700",
     seats: 7,
     fuelType: "Diesel",
     transmission: "Automatic",
     airbags: 6,
-    pricePerKm: 14,
+    pricePerKm: 20,
     image: xuv,
     category: "SUV",
     available: true,
   },
+  // car pic are available
   {
     id: 4,
-    name: "Honda City",
-    seats: 5,
-    fuelType: "Petrol",
-    transmission: "Automatic",
-    airbags: 4,
-    pricePerKm: 2500,
-    image: swift_dezire,
-    category: "Sedan",
-    available: true,
-  },
-  {
-    id: 5,
     name: "Maruti Ertiga",
     seats: 7,
     fuelType: "CNG",
     transmission: "Manual",
     airbags: 2,
-    pricePerKm: 2200,
-    image: xuv,
+    pricePerKm: 15,
+    image: ertiga,
     category: "MPV",
     available: true,
   },
@@ -426,153 +218,94 @@ export const carsData = [
     fuelType: "Petrol",
     transmission: "Automatic",
     airbags: 6,
-    pricePerKm: 2800,
-    image: swift_dezire,
+    pricePerKm: 15,
+    image: creta,
     category: "Sedan",
     available: true,
   },
+
   {
     id: 7,
-    name: "Tata Nexon",
-    seats: 5,
-    fuelType: "Electric",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 3000,
-    image: xuv,
-    category: "SUV",
-    available: true,
-  },
-  {
-    id: 8,
     name: "Toyota Fortuner",
     seats: 7,
     fuelType: "Diesel",
     transmission: "Automatic",
     airbags: 7,
-    pricePerKm: 5000,
-    image: swift_dezire,
+    pricePerKm: 45,
+    image: fortuner,
+    category: "SUV",
+    available: true,
+  },
+  {
+    id: 8,
+    name: "Mini Coach",
+    seats: 24,
+    fuelType: "Diesel",
+    transmission: "Manual",
+    airbags: "No Air ",
+    pricePerKm: 45,
+    image: pic52,
     category: "SUV",
     available: true,
   },
   {
     id: 9,
-    name: "Maruti Baleno",
-    seats: 5,
-    fuelType: "Petrol",
+    name: "Urbania deluxe",
+    seats: 12,
+    fuelType: "Diesel",
     transmission: "Manual",
-    airbags: 2,
-    pricePerKm: 1600,
-    image: swift_dezire,
-    category: "Hatchback",
+    airbags: "No Air ",
+    pricePerKm: 45,
+    image: urbania_delux,
+    category: "SUV",
     available: true,
   },
   {
     id: 10,
-    name: "MG Hector",
-    seats: 5,
+    name: "Tempo traveller",
+    seats: 12,
     fuelType: "Diesel",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 3200,
-    image: xuv,
+    transmission: "Manual",
+    airbags: "No Air ",
+    pricePerKm: 45,
+    image: tempo,
     category: "SUV",
     available: true,
   },
   {
     id: 11,
-    name: "Kia Seltos",
-    seats: 5,
-    fuelType: "Petrol",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 2700,
-    image: xuv,
+    name: "Mini Coach",
+    seats: 27,
+    fuelType: "Diesel",
+    transmission: "Manual",
+    airbags: "No Air ",
+    pricePerKm: 45,
+    image: pic52,
     category: "SUV",
     available: true,
   },
   {
     id: 12,
-    name: "Volkswagen Virtus",
-    seats: 5,
-    fuelType: "Petrol",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 2900,
-    image: crysta,
-    category: "Sedan",
+    name: "Urbania ",
+    seats: 15,
+    fuelType: "Diesel",
+    transmission: "Manual",
+    airbags: "No Air ",
+    pricePerKm: 45,
+    image: urbania,
+    category: "SUV",
     available: true,
   },
   {
     id: 13,
-    name: "Mahindra Thar",
-    seats: 4,
+    name: "Large coach",
+    seats: 41 - 45,
     fuelType: "Diesel",
     transmission: "Manual",
-    airbags: 4,
-    pricePerKm: 3800,
-    image: swift_dezire,
+    airbags: "No Air ",
+    pricePerKm: 45,
+    image: largeCoach,
     category: "SUV",
-    available: true,
-  },
-  {
-    id: 14,
-    name: "Hyundai Verna",
-    seats: 5,
-    fuelType: "Petrol",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 2400,
-    image: crysta,
-    category: "Sedan",
-    available: true,
-  },
-  {
-    id: 15,
-    name: "Tata Safari",
-    seats: 7,
-    fuelType: "Diesel",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 3600,
-    image: xuv,
-    category: "SUV",
-    available: true,
-  },
-  {
-    id: 16,
-    name: "Skoda Slavia",
-    seats: 5,
-    fuelType: "Petrol",
-    transmission: "Automatic",
-    airbags: 6,
-    pricePerKm: 2800,
-    image: swift_dezire,
-    category: "Sedan",
-    available: true,
-  },
-  {
-    id: 17,
-    name: "Mahindra Scorpio",
-    seats: 7,
-    fuelType: "Diesel",
-    transmission: "Manual",
-    airbags: 4,
-    pricePerKm: 3300,
-    image: xuv,
-    category: "SUV",
-    available: true,
-  },
-  {
-    id: 18,
-    name: "Honda Amaze",
-    seats: 5,
-    fuelType: "Petrol",
-    transmission: "Manual",
-    airbags: 2,
-    pricePerKm: 1700,
-    image: crysta,
-    category: "Sedan",
     available: true,
   },
 ];
@@ -635,7 +368,6 @@ export const galleryPhotos = [
   { id: 55, src: pic60 },
 ];
 
-
 export const exploreTour = [
   {
     id: 1,
@@ -665,13 +397,16 @@ export const exploreTour = [
       "Delhi is the heart throb of India. Since centuries it has the political city for rulers who came to India from diverse parts of the world. Today it has completely transformed into a metro city and is an amazing blend of modernity but at the same time it has not lost the touch of its glorious past. From shopping, sightseeing to pampering yourself with multi cuisine food, Delhi has everything to offer its tourist. The India gate, Jama Masjid, Akshardham Temple, the Lotus Temple, the Red Fort, Qutub Minar are some of the most interesting historical monuments which should be visited. The Same Day Delhi Tour starts at 9 AM.",
 
     first: "09:00 AM : Visit to Rajghat, Jama Masjid and more",
-    firstdesc:"Our representative from Perfect Agra Tours will take you around the city for sightseeing. The first location in New Delhi city will be Rajghat i.e. Mahatma Gandhi's memorial, Jama Masjid, The biggest mosque in India, Qutab Minar, Humayun's Tomb, Red Fort, Jantar Mantar and many more",
+    firstdesc:
+      "Our representative from Perfect Agra Tours will take you around the city for sightseeing. The first location in New Delhi city will be Rajghat i.e. Mahatma Gandhi's memorial, Jama Masjid, The biggest mosque in India, Qutab Minar, Humayun's Tomb, Red Fort, Jantar Mantar and many more",
 
     sec: "13.30 PM : Lunch",
-    secdesc: "You can enjoy the best street food or you will taken to a posh restaurant, where you can enjoy the multi-cuisine. You will get the best North Indian and Mughlai cuisine here. After a break you can resume your Delhi Same day tour.",
+    secdesc:
+      "You can enjoy the best street food or you will taken to a posh restaurant, where you can enjoy the multi-cuisine. You will get the best North Indian and Mughlai cuisine here. After a break you can resume your Delhi Same day tour.",
 
     third: "14.30 PM : Historical Building",
-    thirddesc: "You can drive down through Parliament House, Rashtrapathi Bhavan, India Gate, Teen Murti Bhawan, Indira Gandhi Memorial, Gandhi Smriti and Purana Quila. You can enjoy boating and Light and sound show in Purana Quila which starts at 19.00PM which is totally optional.",
+    thirddesc:
+      "You can drive down through Parliament House, Rashtrapathi Bhavan, India Gate, Teen Murti Bhawan, Indira Gandhi Memorial, Gandhi Smriti and Purana Quila. You can enjoy boating and Light and sound show in Purana Quila which starts at 19.00PM which is totally optional.",
 
     fourth: "18.30PM : Places represent Delhi Culture",
     fourthdesc:
@@ -694,7 +429,8 @@ export const exploreTour = [
   {
     id: 3,
     title: "Same Day Jaipur Tour By Car",
-    overview:"Same Day Agra Tour is a credible tour and travel agency that has designed exclusive Jaipur tour package in which we will be our journey to Jaipur from Delhi. After reaching Jaipur our tour guide and travel representative will guide you in visiting different tourist attraction in Jaipur which includes Jal Mahal, Hawa Mahal, City palace, Albert Hall and Amber fort. You can cover this journey in one day and after collecting beautiful memories of trip you can easily get back to your home.",
+    overview:
+      "Same Day Agra Tour is a credible tour and travel agency that has designed exclusive Jaipur tour package in which we will be our journey to Jaipur from Delhi. After reaching Jaipur our tour guide and travel representative will guide you in visiting different tourist attraction in Jaipur which includes Jal Mahal, Hawa Mahal, City palace, Albert Hall and Amber fort. You can cover this journey in one day and after collecting beautiful memories of trip you can easily get back to your home.",
 
     first: "6:00 AM: Start from Delhi and Drive in Jaipur City.",
     firstdesc:
@@ -748,7 +484,8 @@ export const exploreTour = [
   {
     id: 4,
     title: "Golden Triangle Tour With Ranthambore",
-    overview: "Golden Triangle Tour is the landmark of cultural tours of India and gets even more exciting when you visit Ranthambore. The Tour to India is incomplete without visiting Agra for the TAJ MAHAL- one of the wonders of the world also symbolize India, further Golden Triangle tour takes you to Jaipur to get the feel of real essence of royal and colorful India, Golden Triangle tour makes you understand the Indian culture, tradition and warmness of its hospitality with friendly touch.",
+    overview:
+      "Golden Triangle Tour is the landmark of cultural tours of India and gets even more exciting when you visit Ranthambore. The Tour to India is incomplete without visiting Agra for the TAJ MAHAL- one of the wonders of the world also symbolize India, further Golden Triangle tour takes you to Jaipur to get the feel of real essence of royal and colorful India, Golden Triangle tour makes you understand the Indian culture, tradition and warmness of its hospitality with friendly touch.",
 
     first: "Day 1: Arrive in Delhi.",
     firstdesc:
@@ -793,7 +530,8 @@ export const exploreTour = [
   {
     id: 5,
     title: "Golden Triangle Tour 5 Day",
-    overview:"Golden Triangle Tour is the landmark of cultural tours of India and gets even more exciting when you visit Ranthambore. The Tour to India is incomplete without visiting Agra for the TAJ MAHAL- one of the wonders of the world also symbolize India, further Golden Triangle tour takes you to Jaipur to get the feel of real essence of royal and colorful India, Golden Triangle tour makes you understand the Indian culture, tradition and warmness of its hospitality with friendly touch.",
+    overview:
+      "Golden Triangle Tour is the landmark of cultural tours of India and gets even more exciting when you visit Ranthambore. The Tour to India is incomplete without visiting Agra for the TAJ MAHAL- one of the wonders of the world also symbolize India, further Golden Triangle tour takes you to Jaipur to get the feel of real essence of royal and colorful India, Golden Triangle tour makes you understand the Indian culture, tradition and warmness of its hospitality with friendly touch.",
 
     first: "Day 1: Arrive  Delhi.",
     firstdesc:
@@ -814,7 +552,6 @@ export const exploreTour = [
     last: "Day 5: Jaipur - Delhi Airport Drop",
     lastdesc:
       "Early morning after breakfast depart from Jaipur to Delhi around 5 hours drive. Evening As per your flight schedule driver transfer you to Delhi.",
-    
 
     departure: "Delhi Airport / Hotel / Gurgoan",
     departureTime:
@@ -831,7 +568,8 @@ export const exploreTour = [
   {
     id: 6,
     title: "Golden Triangle Tour 4 Days",
-    overview:"Explore India’s Golden Triangle Tour 4 Days from New Delhi, and discover some of India's most famous attractions, such as the Taj Mahal, Agra Fort, and city of Jaipur.",
+    overview:
+      "Explore India’s Golden Triangle Tour 4 Days from New Delhi, and discover some of India's most famous attractions, such as the Taj Mahal, Agra Fort, and city of Jaipur.",
 
     first: "Day 1: Airport to Delhi Hotel & Half Day Delhi Sight-seeing",
     firstdesc:
@@ -845,10 +583,9 @@ export const exploreTour = [
     thirddesc:
       "After breakfast at your hotel, go on an early morning visit to the Taj Mahal to witness the spectacular view of the white marble mausoleum at sunrise. Recognized as the jewel of Muslim art in India, the Taj Mahal is one of the most famous UNESCO World Heritage Sites in the world.Return to your hotel to check out before the drive to Jaipur. En route, you will visit Fatehpur Sikri. Built in the honor of Saint Sheikh Salim Chisti, Fatehpur Sikhri was Akbar's capital and is hailed for its imperial contents. The inner citadel of the city houses showcases some prominent evidence of the skillful artisans of the Mughal era, with highly refined architecture.Tour some of the finest monuments, such as the Diwan-i-Am, Diwan-i-Khas, Panch Mahal, Buland Darwaza, tomb of Saint Sheikh Salim Chisti, and Jama Masjid, one of the largest mosques In India. Continue to Jaipur and check in to your hotel for the night.",
 
-       last: "Day 4: Jaipur to Delhi",
+    last: "Day 4: Jaipur to Delhi",
     lastdesc:
       "After breakfast at your hotel, you will be taken on a Jaipur sightseeing tour. The largest city in Rajasthan, Jaipur was also one of the first planned cities in India and is remarkable for its wide streets, and beautiful terracotta colored buildings.Your first stop will be Amber Fort, located high on a hill overlooking Maota Lake. You will travel there in thrilling fashion on the back of an elephant! With your feet back on firm ground, gaze in awe at the fort’s mirror works, paintings, carvings, mosaics, engravings,frescoes, and murals. Continue to the City Palace complex, which displays a perfect illustration of architecture, art, and craft in structures such as the Chandra Mahal and Mubarak Mahal palaces. Located next to it is Hawa Mahal, or “Palace of Winds,” a unique 5-story structure that looks similar to a giant beehive. A major Golden Triangle Tourattraction of Hawa Mahal is the 953 small windows, or jharokhas that are intricatelydecorated with skillful latticework. Continue to Jantar Mantar, a great masterpiece of Indian architecture that demonstrates the scientific acumen of ancient India. It is a magnanimous solar observatory that consists of 14 major geometric devices for measuring time, predicting eclipses, and tracking the location of stars, as well as the earth’s orbit around the sun. Having spent the day discovering the magical monuments of Jaipur, you will be driven back to Delhi International Airport for your flight home or onward journey. Here End your Delhi Agra Jaipur Tour 4 Days journey.",
-   
 
     departure: "Delhi Airport / Hotel / Gurgoan",
     departureTime:
@@ -862,5 +599,4 @@ export const exploreTour = [
     ],
     notIncluded: ["Monument Entrance fees", "Tipping if any"],
   },
- 
 ];

@@ -12,7 +12,8 @@ function Showcars({ data }) {
         <div className="lg:max-w-1/2 px-10 container lg:py-20 py-10 mx-auto">
           <p className="text-orange-400 text-xl">Premium Fleet</p>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-[#4245AD] w-full md:py-5 py-3">
-            Extraordinary Journeys
+            Luxury Car Collection
+
           </h1>
           <p className="lg:max-w-2/3 text-gray-500  ">
             Experience the thrill of driving premium vehicles with our exclusive

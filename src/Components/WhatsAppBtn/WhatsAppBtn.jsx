@@ -6,7 +6,7 @@ function WhatsAppBtn() {
     <>
       <div>
         <a
-          href="https://api.whatsapp.com/send?phone=7728955910&text=Hello%20I%20want%20to%20book%20a%20tour"
+          href="https://api.whatsapp.com/send?phone=9873545322&text=Hello%20I%20want%20to%20book%20a%20tour"
           target="_blank"
           rel="noopener noreferrer"
         >

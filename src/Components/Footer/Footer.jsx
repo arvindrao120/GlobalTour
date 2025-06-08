@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { assets } from "../../assets/assets";
 import { Link, Links } from "react-router";
 import SocialMedia from "../SocialMedia";
@@ -6,17 +6,21 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
-import { useEffect } from "react";
 
 function Footer() {
-  const handleClick = () => {
-    useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+  // const headerRef = useRef(null);
+
+  // const scrollToHeader = () => {
+  //   headerRef.current?.scrollIntoView({ behavior: "smooth" });
+  // };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
-  };
+  }, []);
+
   return (
     <>
       <div>
@@ -30,7 +34,14 @@ function Footer() {
                 business for almost 25 years.
               </p>
               <p className="flex text-lg items-center hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
-                <Link to={"/readMore"}>Read More</Link>
+                <Link
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  to={"/about"}
+                >
+                  Read More
+                </Link>
               </p>
               <div className="flex items-center justify-start mt-4">
                 <SocialMedia />
@@ -41,35 +52,57 @@ function Footer() {
                 <h1 className="text-3xl font-bold ">Quik Link</h1>
                 <div className=" space-y-3 text-lg py-6">
                   <div>
-                    <p
-                      onClick={handleClick}
-                      className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110"
-                    >
+                    <p className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                       <MdArrowForwardIos />
-                      <Link to={""}>Home</Link>
+                      <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
+                        to={""}
+                      >
+                        Home
+                      </Link>
                     </p>
                   </div>
                   <div>
                     <p className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                       <MdArrowForwardIos />
-                      <Link to={"/termsService"}>Privacy & Policy</Link>
+                      <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
+                        to={"/privacyPolicy"}
+                      >
+                        Privacy & Policy
+                      </Link>
                     </p>
                   </div>
 
                   <div>
                     <p className="flex  max-w-auto  items-center gap-2 hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                       <MdArrowForwardIos />
-                      <Link to={"/termsService"}>Terms And Service</Link>
+                      <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
+                        to={"/termsService"}
+                      >
+                        Terms & Service
+                      </Link>
                     </p>
                   </div>
                   <div>
-                    <Link
-                      to={"/contact"}
-                      className="flex items-center gap-2  cursor-pointer hover:text-[#FF8904] transition-transform duration-300 hover:scale-110"
-                    >
+                    <p className="flex items-center gap-2  cursor-pointer hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
                       <MdArrowForwardIos />
-                      Contact Us
-                    </Link>
+                      <Link
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
+                        to={"/contact"}
+                      >
+                        Contact Us
+                      </Link>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -89,8 +122,8 @@ function Footer() {
                   <div className="flex items-center gap-4 mt-6 max-w-88">
                     <FaPhoneFlip className="text-2xl" />
                     <p className="  hover:text-[#FF8904] transition-transform duration-300 hover:scale-110">
-                      <a href="tel:+91 7728955910" className="text-lg">
-                        +91 7728955910
+                      <a href="tel:+91 9873545322" className="text-lg">
+                        +91 9873545322
                       </a>
                     </p>
                   </div>

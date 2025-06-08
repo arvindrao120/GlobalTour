@@ -42,7 +42,7 @@ function Navbar() {
           boxShadow: "0 4px 12px 0 #1D1C39",
         }}
       >
-        <nav className="flex items-center justify-between lg:px-10 px-4 py-3">
+        <nav className="flex items-center justify-between lg:justify-around lg:px-10 px-4 py-3">
           {/* Logo */}
           <motion.img
             className="w-36"

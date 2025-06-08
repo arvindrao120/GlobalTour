@@ -12,7 +12,12 @@ import Service from "./pages/NavPages/Service.jsx";
 import CarBooking from "./pages/NavPages/CarBooking.jsx";
 import Gallery from "./pages/NavPages/Gallery.jsx";
 import Contact from "./pages/NavPages/Contact.jsx";
-import Details from "./Components/Details.jsx";
+// import Details from "./Components/Details.jsx";
+import PrivacyPolicy from "./pages/FooterPages/PrivacyPolicy.jsx";
+import TermsService from "./pages/FooterPages/TermsService.jsx";
+import DetailsPage from "./pages/NavPages/DetailsPage.jsx";
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +28,9 @@ const router = createBrowserRouter(
       <Route path="/carBooking" element={<CarBooking />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/detail" element={<Details />} />
+      <Route path="/detail/:id" element={<DetailsPage />} />
+      <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+      <Route path="/termsService" element={<TermsService />} />
     </Route>
   )
 );

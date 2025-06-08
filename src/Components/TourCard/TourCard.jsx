@@ -2,6 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaUserFriends, FaClock, FaStar } from "react-icons/fa";
 import PopularDestinationBtn from "../Button/PopularDestinationBtn";
 import { Link } from "react-router";
+// import { exploreTour } from "../../assets/assets";
 
 const TourCard = ({ item }) => {
   return (
@@ -47,7 +48,7 @@ const TourCard = ({ item }) => {
 
           {/* Button at the bottom */}
           <div className="mt-4">
-            <Link to={"/detail"}>
+            <Link to={`/detail/${item.id}`}>
               <PopularDestinationBtn text={"Explore Now"} />
             </Link>
           </div>
